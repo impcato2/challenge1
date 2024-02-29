@@ -8,8 +8,8 @@ function teclado(){
 document.querySelector(".texto").addEventListener("keyup",teclado2);
 
 function teclado2(){
-    let vengador1 = document.getElementById("vengador");
-    vengador1.src= "./images/Vengador1.png";
+    let vengador = document.getElementById("vengador");
+    vengador.src= "./images/Vengador1.png";
 }
 
 
