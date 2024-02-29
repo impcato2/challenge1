@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f5fc;
+    background-image: url(images/oficina.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto{
+    position: absolute;
+    width: 381px;
+    height: 453px;
+    left: 4.2%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 150%;
+    /*background-image:  url(images/Vengador1.png);*/
+    background-repeat: no-repeat;
+    background-color: #f3f5fc;
+    /*background: transparent;*/
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+
+.texto::placeholder{
+    color: #030405;
+}
+
+.texto:focus,
+.texto:active{
+    border: none;
+    outline: none;
+}
+
+.especificacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    top: 80%;
+}
+
+.especificacion p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 83%;
+}
+
+.btn-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin: 2px;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 35px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;   
+}
+
+.btn-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    margin: 2px;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 35px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.vengador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 1px;
+    top: 40%;
+    width: 3%;
+    height: 42%;
+    left: 50%;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 28%;
+    height: 85%;
+    left: 70%;
+    top: 6.5%;
+    /*background: #fff;*/
+    background: linear-gradient(transparent, #fff);
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+    border-radius: 32px;
+}
+
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2{
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #000;
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #000;
+}
+
+.encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+/*Responsive designe*/
+@media (max-width: 60.5em) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .encriptador{
+        width: 100%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .especificacion{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+
+    .especificacion p{
+        font-size: 16px;
+    }
+
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar{
+        width: 48%;
+        border-radius: 24px;
+    }
+
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .vengador{
+        visibility: hidden;
+    }
+
+    .encriptado{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+
+    .mensaje-encriptado{
+        width: 100%;
+        top: 5%;
+        color: #000;
+    }
+
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+    
+}
