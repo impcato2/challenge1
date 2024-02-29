@@ -9,7 +9,7 @@ document.querySelector(".texto").addEventListener("keyup",teclado2);
 
 function teclado2(){
     let vengador1 = document.getElementById("vengador");
-    vengador1.src="./images/Vengador1.png";
+    vengador1.src= "./images/Vengador1.png";
 }
 
 
