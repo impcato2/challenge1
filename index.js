@@ -1,8 +1,8 @@
 document.querySelector(".texto").addEventListener("keydown",teclado);
 
 function teclado(){
-    let vengador1 = document.getElementById("vengador");
-    vengador1.src="./images/vengador2.1.png";
+    let vengador2 = document.getElementById("vengador");
+    vengador2.src="./images/vengador2.1.png";
 }
 
 document.querySelector(".texto").addEventListener("keyup",teclado2);
